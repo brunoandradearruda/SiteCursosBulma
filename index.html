@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Dieta
+          </a>
+          <a class="navbar-item">
+            Concurso
+          </a>
+          <a class="navbar-item">
+            Desing Unhas/Sobrancelhas
+          </a>
+          <a class="navbar-item">
+            Direito
+          </a>
+          <a class="navbar-item">
+            Moda
+          </a>
+          <a class="navbar-item">
+            Enem
+          </a>
+          <a class="navbar-item">
+            Carreira Policial
+          </a>
+          <a class="navbar-item">
+            Saúde e Esportes
+          </a>
+          <a class="navbar-item">
+            Teologia
+          </a>
+
+
+
+
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+
+      });
+    </script>
+
+
+    <section class="section">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./CSS/images/maisprocurados/CpiadeMatrculas10801080px.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <span class="tag is-link is-medium">O segredo da AutoMaquiagem</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class>Eleve sua autoestima! Se sinta bem, bonita, maquiada e empoderada!</p>
+                  <div class="content-text">
+                  <span class="tag is-warning is-medium">Acessar</span>
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Corpo do Site usando 3 colunas das 12 disponíveis-->
+
+
+
+          <!--Corpo do Site usando 9 colunas das 12 disponíveis-->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Corpo do Site usando 3 colunas das 12 disponíveis-->
+
+
+
+          <!--Corpo do Site usando 9 colunas das 12 disponíveis-->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Corpo do Site usando 3 colunas das 12 disponíveis-->
+
+
+
+          <!--Corpo do Site usando 9 colunas das 12 disponíveis-->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./CSS/images/maisprocurados/CpiadeMatrculas10801080px.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+  </header>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+
+
+
+
+
+
+</html>
