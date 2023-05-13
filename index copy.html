@@ -1,374 +1,464 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-    <title>Modal Cards - Free Bulma template</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/hero.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-    <style>
-    .columns:nth-child(2)
-    {margin-top: -10rem;}
-    </style>
-  </head>
-  <body>
-    <section class="hero is-info is-small">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">
-            Modal Cards
-          </p>
-          <p class="subtitle">
-            Subtitle
-          </p>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Dieta
+          </a>
+          <a class="navbar-item">
+            Concurso
+          </a>
+          <a class="navbar-item">
+            Desing Unhas/Sobrancelhas
+          </a>
+          <a class="navbar-item">
+            Direito
+          </a>
+          <a class="navbar-item">
+            Moda
+          </a>
+          <a class="navbar-item">
+            Enem
+          </a>
+        
+          <a class="navbar-item">
+            Saúde e Esportes
+          </a>
+          <a class="navbar-item">
+            Teologia
+          </a>
+
+
+
+
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Mais
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+              <div class="field">
+                  <div class="control">
+                      <input class="input" type="text" placeholder="Search . . .">
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </nav>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+
+      });
+    </script>
+
+
+    <section class="section">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <a href="https://programareceitasparasecar.com/?ref=U79433775T" target="_blank"><img src="./CSS/images/maisprocurados/LOGORECEITAS1.png" alt="Emagrecer rápido"></a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <span class="tag is-link is-medium">RECEITAS PARA SECAR EM 30 DIAS </span>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class ="has-text-justified">Programa de Reeducação Alimentar Ajuda Mais de 75.000 Pessoas em 7 Países nos Últimos 2 Anos que Precisavam Reduzir Drasticamente Suas GORDURAS CORPORAIS em poucos dias.</p>
+                  <div class="content-text">
+                  <span class="tag is-warning is-medium"><a href="https://programareceitasparasecar.com/?ref=U79433775T" aria-current="page"target="_blank">Acessar</a></span>               
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Corpo do Site usando 3 colunas das 12 disponíveis-->
+
+
+
+          <!--Corpo do Site usando 9 colunas das 12 disponíveis-->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <a href="https://lucasvieiramakeup.com/automaquiagem?ref=X80135486K" target="_blank"><img src="./CSS/images/maisprocurados/CpiadeMatrculas10801080px.png" alt="automaquiagem"></a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <span class="tag is-link is-medium">O segredo da Automaquiagem</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class ="has-text-justified">Você Bonita e Pronta para Qualquer Ocasião. Eleve sua autoestima! Se sinta bem, bonita, maquiada e empoderada!</p>
+                  <div class="content-text">
+                  <span class="tag is-warning is-medium"><a href="https://lucasvieiramakeup.com/automaquiagem?ref=X80135486K" aria-current="page"target="_blank">Acessar</a></span>               
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <a href="https://go.hotmart.com/I40555336Y" target="_blank"><img src="./CSS/images/maisprocurados/AULAS MANICURE.png" alt="curso de manicure"></a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <span class="tag is-link is-medium">Curso de Manicure e Pedicure</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class ="has-text-justified">Faby Cardoso, uma das maiores influenciadoras de manicure do Brasil. MAIS DE 5391 ALUNAS SATISFEITAS COM OS RESULTADOS APÓS O CURSO</p>
+                  <div class="content-text">
+                  <span class="tag is-warning is-medium"><a href="https://go.hotmart.com/I40555336Y" aria-current="page"target="_blank">Acessar</a></span>               
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <a href="https://go.hotmart.com/R80276777H" target="_blank"><img src="./CSS/images/maisprocurados/RealLove2.png" alt="Ansiedade"></a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <span class="tag is-link is-medium">21 Métodos Naturais para Ansiedade</span>
+                  </div>
+                  
+                </div>
+                <div>
+                <div class="content">
+                  <p class ="has-text-justified">21 Métodos Naturais para Ansiedade + Comunidade no WhatsApp com Mensagens Diárias</p>
+                  <div class="content-text">
+                    
+                  <span class="tag is-warning is-medium"><a href="https://go.hotmart.com/R80276777H" aria-current="page"target="_blank">Acessar</a></span>               
+                </div>
+                <br>
+                </div>
+                
+                
+                </div>
+                
+                
+              </div>
+              
+            </div>
+          </div>
+          
     </section>
-    <div class="box cta">
-      <p class="has-text-centered">
-        <span class="tag is-primary">New</span> Here we have modal cards. When you click on them they will open functional modal examples.
+
+    <section class="section">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Corpo do Site usando 3 colunas das 12 disponíveis-->
+
+
+
+          <!--Corpo do Site usando 9 colunas das 12 disponíveis-->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Corpo do Site usando 3 colunas das 12 disponíveis-->
+
+
+
+          <!--Corpo do Site usando 9 colunas das 12 disponíveis-->
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./CSS/images/maisprocurados/CpiadeMatrculas10801080px.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Bruno Arruda</p>
+                    <p class="subtitle is-6">@bruno_andradebr</p>
+                    <span class="tag is-dark is-medium">Java WEB Developer</span>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>Tel.:<a href="83987726717">83 98772-6717</a></p>
+                  <p><a href="mailto:webmaster@example.com">brunoandradearruda@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+  </header>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
       </p>
     </div>
-    <section class="container">
-      <div class="columns features">
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://source.unsplash.com/RWnpyGtY1aU" alt="Placeholder image" class="modal-button" data-target="modal-image2">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Click on image above</h4>
-                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Tempor orci dapibus faffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffber in.</h4>
-                <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                sed risus.</p>
-                <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4 modal-button" data-target="modal-image">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://res.cloudinary.com/ameo/image/upload/v1568711475/pexels-photo-1302883_fjje0f.jpg" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Click anywhere on card</h4>
-                <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <span class="button is-link modal-button" data-target="modal-image">Image modal</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="columns features">
-        <div class="column is-4 modal-button" data-target="modal-card">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://res.cloudinary.com/ameo/image/upload/v1568711475/pexels-photo-1302883_fjje0f.jpg" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Click anywhere on card to <br>expand into modal card</h4>
-                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                <span class="button is-link modal-button">Modal card</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://source.unsplash.com/hLyd1LukQ7E" alt="butterfly image" class="modal-button" data-target="modal-image4">
-              </figure>
-            </div>
-            <div class="card-content  modal-button" data-target="modal-card2">
-              <div class="content">
-                <h4>Click anywhere on card to <br>expand into modal card - header image expands into bigger image</h4>
-                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
-                <span class="button is-link modal-button">Modal card</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <section class="section">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-one-third">
-              <article class="notification media has-background-white">
-                <figure class="media-left">
-                  <span class="icon">
-                    <i class="has-text-warning fa fa-columns fa-lg"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <h1 class="title is-size-4">Columns</h1>
-                    <p class="is-size-5 subtitle">
-                      The power of <strong>Flexbox</strong> in a simple interface
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-one-third">
-              <article class="notification has-background-white media">
-                <figure class="media-left">
-                  <span class="icon has-text-info">
-                    <i class="fa fa-lg fa-wpforms"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <h1 class="title is-size-4">Form</h1>
-                    <p class="is-size-5 subtitle">
-                      The indispensable <strong>form controls</strong>, designed for maximum clarity
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-one-third">
-              <article class="notification has-background-white media">
-                <figure class="media-left">
-                  <span class="icon has-text-danger">
-                    <i class="fa fa-lg fa-cubes"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <h1 class="title is-size-4">Components</h1>
-                    <p class="is-size-5 subtitle">
-                      Advanced multi-part components with lots of possibilities
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-one-third">
-              <article class="notification has-background-white media">
-                <figure class="media-left">
-                  <span class="icon has-text-grey">
-                    <i class="fa fa-lg fa-cogs"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <h1 class="title is-size-4">Modifiers</h1>
-                    <p class="is-size-5 subtitle">
-                      An <strong>easy-to-read</strong> naming system designed for humans
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-one-third">
-              <article class="notification has-background-white media">
-                <figure class="media-left">
-                  <span class="icon has-text-primary">
-                    <i class="fa fa-lg fa-superpowers"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <h1 class="title is-size-4">Layout</h1>
-                    <p class="is-size-5 subtitle">
-                      Design the <strong>structure</strong> of your webpage with these CSS classes
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="column is-one-third">
-              <article class="notification has-background-white media">
-                <figure class="media-left">
-                  <span class="icon has-text-danger">
-                    <i class="fa fa-lg fa-cube"></i>
-                  </span>
-                </figure>
-                <div class="media-content">
-                  <div class="content">
-                    <h1 class="title is-size-4">Elements</h1>
-                    <p class="is-size-5 subtitle">
-                      Essential interface elements that only require a <strong>single CSS class</strong>
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="content has-text-centered">
-        <div class="control level-item">
-          <a href="https://github.com/BulmaTemplates/bulma-templates">
-            <div class="tags has-addons">
-              <span class="tag is-dark">Bulma Templates</span>
-              <span class="tag is-info">MIT license</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </footer>
-    <!--  ===============
-    HERE BE MODALS
-    ===============  -->
-    <!-- 3dFlipVertical card tiny -->
-    <div id="modal-card" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-tiny">
-        <!-- content -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="linda barret avatar">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Jane Doe</p>
-                <p class="subtitle is-6">@jane_doe</p>
-              </div>
-            </div>
-            <div class="content">
-              Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
-              Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
-              Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
-              nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-              <a>@bulmaio</a>.
-              <a href="#">#css</a>
-              <a href="#">#responsive</a>
-              <br>
-              <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
-            </div>
-          </div>
-        </div>
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <!-- end tiny modal card -->
-    <!-- 3dFlipVertical card tiny [butterfly] -->
-    <div id="modal-card2" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-tiny">
-        <!-- content -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/hLyd1LukQ7E" alt="butterfly">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="linda barret avatar">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Jane Doe</p>
-                <p class="subtitle is-6">@jane_doe</p>
-              </div>
-            </div>
-            <div class="content">
-              Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
-              Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
-              Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
-              nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-              <a>@bulmaio</a>.
-              <a href="#">#css</a>
-              <a href="#">#responsive</a>
-              <br>
-              <time datetime="2018-02-02">12:45 AM - 20 May 2018</time>
-            </div>
-          </div>
-        </div>
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <!-- end tiny modal card -->
-    <!-- Image modal -->
-    <div id="modal-image2" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-huge is-image">
-        <!-- content -->
-        <img src="https://source.unsplash.com/RWnpyGtY1aU" alt="image">
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <!-- Image modal -->
-    <div id="modal-image4" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-huge is-image">
-        <!-- content -->
-        <img src="https://source.unsplash.com/hLyd1LukQ7E" alt="butterfly">
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <!-- Image modal-->
-    <div id="modal-image" class="modal modal-fx-superScaled">
-      <div class="modal-background"></div>
-      <div class="modal-content  is-image">
-        <!-- content -->
-        <img src="https://res.cloudinary.com/ameo/image/upload/v1568711475/pexels-photo-1302883_fjje0f.jpg" alt="Placeholder image">
-        <!--     <img src="https://source.unsplash.com/zFrUz_tNjCY" alt="placeholder">
-        -->    <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
-    <script src="../js/wild.js"></script>
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        //The first argument are the elements to which the plugin shall be initialized
-        //The second argument has to be at least a empty object or a object with your desired options
-        OverlayScrollbars(document.querySelectorAll("body"), { });
-        });
-        </script>  
-  </body>
+  </footer>
+</body>
+
+
+
+
+
+
 </html>
